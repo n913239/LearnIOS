@@ -1,9 +1,16 @@
-// 變數
-var x = 2
-x + 3
+// Int
+var myNumber:Int
+myNumber = 10
+myNumber = myNumber + 10
 
-// 常數
-let age = 18
 
-var theAgeOfMyCat = 10
-let myLuckNumber = 7
+// Double & Float
+let gravityNumber:Float = 9.8
+var mathNumber:Double = 3.1415
+
+myNumber = 23
+
+Float(myNumber) * gravityNumber
+
+let numberDoesntChange:Int = 5
+Double(numberDoesntChange) / 2
