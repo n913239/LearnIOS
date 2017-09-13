@@ -1,11 +1,6 @@
 class Person {
-    var firstname:String
-    var lastName:String
-    var fullname:String
+    weak var heart: Heart?
     init() {
-        firstname = "Mike"
-        lastName = "Wang"
-        fullname = firstname + lastName
         print("a person is being initialized")
     }
     deinit {
@@ -13,18 +8,21 @@ class Person {
     }
 }
 
-var person1:Person? = Person()
-var person2:Person? = person1
+class Heart {
+    weak var person: Person?
+    init() {
+        print("a heart is being initialized")
+    }
+    deinit {
+        print("a heart is being deinitialized")
+    }
+}
 
-person1 = nil
-person2 = nil
+var aPerson:Person? = Person()
+var aHeart:Heart? = Heart()
 
-var number1 = 1
-var number2 = number1
+// retain cycle
+aPerson?.heart = aHeart
+aHeart?.person = aPerson
 
-number1  = 10
-number2
-
-
-
-
+aPerson = nil
