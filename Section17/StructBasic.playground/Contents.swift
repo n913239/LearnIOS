@@ -1,29 +1,30 @@
-struct Size {
+// struct(value type) and class(reference type)
+struct SizeStruct {
     var width: Float = 5.0
     var height: Float = 8.0
-    
     func area() -> Float {
         return width * height
     }
 }
 
-var aSize:Size = Size(width: 20.0, height: 30.0)
-aSize.width
-aSize.height = 50.0
-
-var newSize:Size = Size()
-newSize.height
-newSize.area()
-
-struct Name {
-    var firstname:String
-    var lastname:String
-    func fullname() -> String {
-        return firstname + lastname
+class SizeClass {
+    var width: Float = 5.0
+    var height: Float = 8.0
+    func area() -> Float {
+        return width * height
     }
 }
 
-var myName = Name(firstname: "Mike", lastname: "Wang")
-myName.firstname
-myName.lastname
-myName.fullname()
+var sizeClass1 = SizeClass()
+var sizeClass2 = sizeClass1
+sizeClass1.width = 100
+sizeClass2.width
+
+var sizeStruct1 = SizeStruct()
+var sizeStruct2 = sizeStruct1
+sizeStruct1.width = 100
+sizeStruct2.width
+
+import UIKit
+CGRect(x: 0, y: 0, width: 100, height: 100)
+
