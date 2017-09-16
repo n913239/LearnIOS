@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloRecordAudio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1k-3Y-3uW">
+                                <rect key="frame" x="151" y="139" width="72" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="QRP-QL-kIz"/>
+                                    <constraint firstAttribute="height" constant="42" id="xJp-Ib-lLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="record"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bev-AJ-1OG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cll-c3-5nc">
+                                <rect key="frame" x="126" y="251" width="122" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="122" id="lni-8Y-pN1"/>
+                                    <constraint firstAttribute="height" constant="42" id="tRy-UK-Rny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="stop record"/>
+                                <connections>
+                                    <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suH-x6-dtw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZN-vl-Ocm">
+                                <rect key="frame" x="138" y="525" width="98" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="QjD-MT-6gn"/>
+                                    <constraint firstAttribute="height" constant="42" id="vwr-Ds-WGB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="stop play"/>
+                                <connections>
+                                    <action selector="stopPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NRL-0z-mmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAw-oK-VbS">
+                                <rect key="frame" x="151" y="413" width="72" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="2iZ-zz-Lwv"/>
+                                    <constraint firstAttribute="height" constant="42" id="wpv-pQ-j8k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="play"/>
+                                <connections>
+                                    <action selector="playRecordSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8d8-YD-Jlt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K1k-3Y-3uW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="AG6-XD-Zu7"/>
+                            <constraint firstItem="gZN-vl-Ocm" firstAttribute="top" secondItem="jAw-oK-VbS" secondAttribute="bottom" constant="70" id="Hml-Ww-hOt"/>
+                            <constraint firstItem="jAw-oK-VbS" firstAttribute="centerX" secondItem="gZN-vl-Ocm" secondAttribute="centerX" id="R03-Y6-zY0"/>
+                            <constraint firstItem="K1k-3Y-3uW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="95" id="Te6-gZ-lB1"/>
+                            <constraint firstItem="cll-c3-5nc" firstAttribute="top" secondItem="K1k-3Y-3uW" secondAttribute="bottom" constant="70" id="Wax-ix-OgN"/>
+                            <constraint firstItem="jAw-oK-VbS" firstAttribute="top" secondItem="cll-c3-5nc" secondAttribute="bottom" constant="120" id="hlk-Vc-2N5"/>
+                            <constraint firstItem="jAw-oK-VbS" firstAttribute="leading" secondItem="K1k-3Y-3uW" secondAttribute="leading" id="sec-u0-VMN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K1k-3Y-3uW" secondAttribute="trailing" constant="152" id="tjw-kG-5vq"/>
+                            <constraint firstItem="jAw-oK-VbS" firstAttribute="centerX" secondItem="cll-c3-5nc" secondAttribute="centerX" id="uOU-p5-7eD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
