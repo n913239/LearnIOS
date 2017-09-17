@@ -71,7 +71,15 @@ class ViewController: UIViewController {
                     }
                 }
             })
-            newTask?.resume()
+            
+            // 檢查網路是否正常
+            let reachability = Reachability(hostName: "www.apple.com")
+            if reachability?.currentReachabilityStatus().rawValue == 0 {
+                print("no internet")
+            } else {
+                print("internet ok")
+                newTask?.resume()
+            }
         }
         
         

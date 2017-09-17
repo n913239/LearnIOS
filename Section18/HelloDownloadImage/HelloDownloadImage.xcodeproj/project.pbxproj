@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272B7B521F6E495C00D0C50A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 272B7B501F6E495C00D0C50A /* Reachability.m */; };
 		273E450D1F6DE55E00BE1462 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E450C1F6DE55E00BE1462 /* AppDelegate.swift */; };
 		273E450F1F6DE55E00BE1462 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E450E1F6DE55E00BE1462 /* ViewController.swift */; };
 		273E45121F6DE55E00BE1462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273E45101F6DE55E00BE1462 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272B7B4C1F6E491F00D0C50A /* HelloDownloadImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloDownloadImage-Bridging-Header.h"; sourceTree = "<group>"; };
+		272B7B501F6E495C00D0C50A /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		272B7B511F6E495C00D0C50A /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		273E45091F6DE55E00BE1462 /* HelloDownloadImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloDownloadImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273E450C1F6DE55E00BE1462 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273E450E1F6DE55E00BE1462 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +61,12 @@
 				273E450C1F6DE55E00BE1462 /* AppDelegate.swift */,
 				273E450E1F6DE55E00BE1462 /* ViewController.swift */,
 				273E45101F6DE55E00BE1462 /* Main.storyboard */,
+				272B7B511F6E495C00D0C50A /* Reachability.h */,
+				272B7B501F6E495C00D0C50A /* Reachability.m */,
 				273E45131F6DE55E00BE1462 /* Assets.xcassets */,
 				273E45151F6DE55E00BE1462 /* LaunchScreen.storyboard */,
 				273E45181F6DE55E00BE1462 /* Info.plist */,
+				272B7B4C1F6E491F00D0C50A /* HelloDownloadImage-Bridging-Header.h */,
 			);
 			path = HelloDownloadImage;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					273E45081F6DE55E00BE1462 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				273E450F1F6DE55E00BE1462 /* ViewController.swift in Sources */,
+				272B7B521F6E495C00D0C50A /* Reachability.m in Sources */,
 				273E450D1F6DE55E00BE1462 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +283,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloDownloadImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.HelloDownloadImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloDownloadImage/HelloDownloadImage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloDownloadImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.HelloDownloadImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloDownloadImage/HelloDownloadImage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
