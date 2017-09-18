@@ -43,7 +43,7 @@ class ViewController: UIViewController {
                             self.objects = rssParserDelegate.getResult()
                             DispatchQueue.main.async {
                                 self.myTableView.reloadData()
-                            }                            
+                            }
                         } else {
                             print("parser fail")
                         }
