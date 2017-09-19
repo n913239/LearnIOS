@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,68 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuickDial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDG-oi-y1E" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                                <color key="backgroundColor" red="0.83827608823776245" green="0.21838060021400452" blue="0.14252042770385742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-ay-EPp" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="134" width="375" height="133.5"/>
+                                <color key="backgroundColor" red="0.92609101533889771" green="0.65839934349060059" blue="0.072317250072956085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-qR-PEl" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="267.5" width="375" height="133.5"/>
+                                <color key="backgroundColor" red="0.26154178380966187" green="0.67444819211959839" blue="0.51361304521560669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H7-Vw-eze" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="401" width="375" height="133.5"/>
+                                <color key="backgroundColor" red="0.32788124680519104" green="0.69195008277893066" blue="0.86042338609695435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-2O-VwQ" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="534.5" width="375" height="133.5"/>
+                                <color key="backgroundColor" red="0.26674416661262512" green="0.5020565390586853" blue="0.79277688264846802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yDy-2O-VwQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0fb-Wi-nVg"/>
+                            <constraint firstItem="yDy-2O-VwQ" firstAttribute="top" secondItem="0H7-Vw-eze" secondAttribute="bottom" id="1Yi-0E-BpS"/>
+                            <constraint firstItem="GSG-qR-PEl" firstAttribute="top" secondItem="AvZ-ay-EPp" secondAttribute="bottom" id="1aW-cT-5HN"/>
+                            <constraint firstItem="AvZ-ay-EPp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="CJi-mB-g5I"/>
+                            <constraint firstItem="jDG-oi-y1E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EpN-EF-EyW"/>
+                            <constraint firstItem="yDy-2O-VwQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="IOm-YB-FvY"/>
+                            <constraint firstItem="yDy-2O-VwQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JaZ-uq-Ef1"/>
+                            <constraint firstItem="jDG-oi-y1E" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="K7i-pE-Vbe"/>
+                            <constraint firstItem="jDG-oi-y1E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KJU-X5-87L"/>
+                            <constraint firstItem="jDG-oi-y1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LEI-th-0Bt"/>
+                            <constraint firstItem="0H7-Vw-eze" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qk1-YD-GDn"/>
+                            <constraint firstItem="AvZ-ay-EPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qxk-Bv-d6G"/>
+                            <constraint firstItem="GSG-qR-PEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z5c-bh-abT"/>
+                            <constraint firstItem="0H7-Vw-eze" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="bbX-tO-6VC"/>
+                            <constraint firstItem="GSG-qR-PEl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="cGt-xQ-9fl"/>
+                            <constraint firstItem="0H7-Vw-eze" firstAttribute="top" secondItem="GSG-qR-PEl" secondAttribute="bottom" id="hLN-al-fqe"/>
+                            <constraint firstItem="0H7-Vw-eze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oBI-Sf-2PQ"/>
+                            <constraint firstItem="GSG-qR-PEl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="p0f-OG-Qwn"/>
+                            <constraint firstItem="AvZ-ay-EPp" firstAttribute="top" secondItem="jDG-oi-y1E" secondAttribute="bottom" id="un0-Ot-vc7"/>
+                            <constraint firstItem="AvZ-ay-EPp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xcR-MC-rJ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="jDG-oi-y1E" id="dA0-AK-5bU"/>
+                        <outlet property="button2" destination="AvZ-ay-EPp" id="cCH-tU-8JR"/>
+                        <outlet property="button3" destination="GSG-qR-PEl" id="LTD-Uu-2Jd"/>
+                        <outlet property="button4" destination="0H7-Vw-eze" id="Vpk-Kj-Z4g"/>
+                        <outlet property="button5" destination="yDy-2O-VwQ" id="Upi-0U-ghL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>

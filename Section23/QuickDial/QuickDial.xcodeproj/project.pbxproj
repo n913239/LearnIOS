@@ -13,6 +13,7 @@
 		272C6FD71F711DA100C1B823 /* QuickDial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 272C6FD51F711DA100C1B823 /* QuickDial.xcdatamodeld */; };
 		272C6FD91F711DA100C1B823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272C6FD81F711DA100C1B823 /* Assets.xcassets */; };
 		272C6FDC1F711DA100C1B823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C6FDA1F711DA100C1B823 /* LaunchScreen.storyboard */; };
+		272C6FE41F7120E300C1B823 /* BigLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C6FE31F7120E300C1B823 /* BigLabelButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		272C6FD81F711DA100C1B823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272C6FDB1F711DA100C1B823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272C6FDD1F711DA100C1B823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272C6FE31F7120E300C1B823 /* BigLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigLabelButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				272C6FCE1F711DA100C1B823 /* AppDelegate.swift */,
 				272C6FD01F711DA100C1B823 /* ViewController.swift */,
 				272C6FD21F711DA100C1B823 /* Main.storyboard */,
+				272C6FE31F7120E300C1B823 /* BigLabelButton.swift */,
 				272C6FD81F711DA100C1B823 /* Assets.xcassets */,
 				272C6FDA1F711DA100C1B823 /* LaunchScreen.storyboard */,
 				272C6FDD1F711DA100C1B823 /* Info.plist */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272C6FD11F711DA100C1B823 /* ViewController.swift in Sources */,
+				272C6FE41F7120E300C1B823 /* BigLabelButton.swift in Sources */,
 				272C6FD71F711DA100C1B823 /* QuickDial.xcdatamodeld in Sources */,
 				272C6FCF1F711DA100C1B823 /* AppDelegate.swift in Sources */,
 			);
