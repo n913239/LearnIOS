@@ -40,7 +40,26 @@ class BigLabelButton: UIButton {
             UIColor(red: 0, green: 0.38, blue: 0.7, alpha: 1)
         ]
         
+        if colorArray != nil {
+            backgroundColor = colorArray![tag]
+        }
+        
     }
     
+    override var isHighlighted: Bool {
+        didSet {
+            guard colorArray != nil && colorPressArray != nil else { return }
+            switch isHighlighted {
+            case true:
+                backgroundColor = colorPressArray![tag]
+                bigLabel.textColor = UIColor.gray
+            case false:
+                backgroundColor = colorArray![tag]
+                bigLabel.textColor = UIColor.white
+            }
+            
+            
+        }
+    }
     
 }

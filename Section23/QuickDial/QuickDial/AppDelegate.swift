@@ -13,10 +13,39 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var friendMatrix = [Friend]()
+    var tempData = (id: -1, name: "", number: "")
+    
+    func loadData() {
+        let context = persistentContainer.viewContext
+        do {
+            let results = try context.fetch(Friend.fetchRequest())
+            if results.count == 0 {
+                // first time open this app, make new data
+                for _ in 0...4 {
+                    let friend = Friend(context: context)
+                    friend.name = ""
+                    friend.number = ""
+                    friendMatrix.append(friend)
+                    saveContext()
+                }
+            } else {
+                // not the first time, load data
+                for item in results {
+                    if let friend = item as? Friend {
+                        friendMatrix.append(friend)
+                    }
+                }
+            }
+        } catch {
+            print("can't load data")
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        loadData()
         return true
     }
 

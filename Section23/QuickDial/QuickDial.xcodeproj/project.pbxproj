@@ -14,6 +14,9 @@
 		272C6FD91F711DA100C1B823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272C6FD81F711DA100C1B823 /* Assets.xcassets */; };
 		272C6FDC1F711DA100C1B823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272C6FDA1F711DA100C1B823 /* LaunchScreen.storyboard */; };
 		272C6FE41F7120E300C1B823 /* BigLabelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C6FE31F7120E300C1B823 /* BigLabelButton.swift */; };
+		2736404C1F713B7900D36791 /* SettingNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736404B1F713B7900D36791 /* SettingNameViewController.swift */; };
+		2736404E1F713B8B00D36791 /* SettingNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736404D1F713B8B00D36791 /* SettingNumberViewController.swift */; };
+		273640501F713B9B00D36791 /* DeleteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2736404F1F713B9B00D36791 /* DeleteEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		272C6FDB1F711DA100C1B823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272C6FDD1F711DA100C1B823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272C6FE31F7120E300C1B823 /* BigLabelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigLabelButton.swift; sourceTree = "<group>"; };
+		2736404B1F713B7900D36791 /* SettingNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNameViewController.swift; sourceTree = "<group>"; };
+		2736404D1F713B8B00D36791 /* SettingNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNumberViewController.swift; sourceTree = "<group>"; };
+		2736404F1F713B9B00D36791 /* DeleteEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,8 @@
 		272C6FCD1F711DA100C1B823 /* QuickDial */ = {
 			isa = PBXGroup;
 			children = (
+				273640511F713BA300D36791 /* Controllers */,
 				272C6FCE1F711DA100C1B823 /* AppDelegate.swift */,
-				272C6FD01F711DA100C1B823 /* ViewController.swift */,
 				272C6FD21F711DA100C1B823 /* Main.storyboard */,
 				272C6FE31F7120E300C1B823 /* BigLabelButton.swift */,
 				272C6FD81F711DA100C1B823 /* Assets.xcassets */,
@@ -68,6 +74,17 @@
 				272C6FD51F711DA100C1B823 /* QuickDial.xcdatamodeld */,
 			);
 			path = QuickDial;
+			sourceTree = "<group>";
+		};
+		273640511F713BA300D36791 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2736404B1F713B7900D36791 /* SettingNameViewController.swift */,
+				2736404D1F713B8B00D36791 /* SettingNumberViewController.swift */,
+				272C6FD01F711DA100C1B823 /* ViewController.swift */,
+				2736404F1F713B9B00D36791 /* DeleteEditViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				272C6FD11F711DA100C1B823 /* ViewController.swift in Sources */,
+				2736404C1F713B7900D36791 /* SettingNameViewController.swift in Sources */,
 				272C6FE41F7120E300C1B823 /* BigLabelButton.swift in Sources */,
 				272C6FD71F711DA100C1B823 /* QuickDial.xcdatamodeld in Sources */,
+				2736404E1F713B8B00D36791 /* SettingNumberViewController.swift in Sources */,
+				273640501F713B9B00D36791 /* DeleteEditViewController.swift in Sources */,
 				272C6FCF1F711DA100C1B823 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

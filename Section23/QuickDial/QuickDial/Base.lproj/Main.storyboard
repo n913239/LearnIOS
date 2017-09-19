@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t9m-uZ-8fb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,22 +29,37 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDG-oi-y1E" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
                                 <color key="backgroundColor" red="0.83827608823776245" green="0.21838060021400452" blue="0.14252042770385742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKm-7q-J2B"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-ay-EPp" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvZ-ay-EPp" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="134" width="375" height="133.5"/>
                                 <color key="backgroundColor" red="0.92609101533889771" green="0.65839934349060059" blue="0.072317250072956085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efm-2r-hjC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-qR-PEl" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSG-qR-PEl" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="267.5" width="375" height="133.5"/>
                                 <color key="backgroundColor" red="0.26154178380966187" green="0.67444819211959839" blue="0.51361304521560669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiY-N0-54c"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H7-Vw-eze" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H7-Vw-eze" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="401" width="375" height="133.5"/>
                                 <color key="backgroundColor" red="0.32788124680519104" green="0.69195008277893066" blue="0.86042338609695435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVk-2b-Tmn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-2O-VwQ" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-2O-VwQ" customClass="BigLabelButton" customModule="QuickDial" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="534.5" width="375" height="133.5"/>
                                 <color key="backgroundColor" red="0.26674416661262512" green="0.5020565390586853" blue="0.79277688264846802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6P-dr-GbE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,17 +87,243 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NM4-e7-S3t"/>
                     <connections>
                         <outlet property="button1" destination="jDG-oi-y1E" id="dA0-AK-5bU"/>
                         <outlet property="button2" destination="AvZ-ay-EPp" id="cCH-tU-8JR"/>
                         <outlet property="button3" destination="GSG-qR-PEl" id="LTD-Uu-2Jd"/>
                         <outlet property="button4" destination="0H7-Vw-eze" id="Vpk-Kj-Z4g"/>
                         <outlet property="button5" destination="yDy-2O-VwQ" id="Upi-0U-ghL"/>
+                        <segue destination="AkW-bP-wVK" kind="show" identifier="showSettingName" id="SUj-Lc-KPe"/>
+                        <segue destination="1tt-7k-zaf" kind="show" identifier="showDeleteEdit" id="Dtd-nw-cCt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Delete Edit View Controller-->
+        <scene sceneID="Qld-tE-2zC">
+            <objects>
+                <viewController id="1tt-7k-zaf" customClass="DeleteEditViewController" customModule="QuickDial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dq3-za-yFv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP3-7c-oCV">
+                                <rect key="frame" x="10" y="40" width="22" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="207-UW-4Eu"/>
+                                    <constraint firstAttribute="width" constant="22" id="3Iv-Ss-IVc"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="backToMenu:" destination="1tt-7k-zaf" eventType="touchUpInside" id="yTt-Ma-6jD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PF-GP-N64">
+                                <rect key="frame" x="94" y="373" width="187" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="po4-CT-5uK"/>
+                                    <constraint firstAttribute="height" constant="44" id="xnD-Co-oMc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="28"/>
+                                <state key="normal" title="Edit this entry">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="editEntry:" destination="1tt-7k-zaf" eventType="touchUpInside" id="waZ-Tc-5QO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X29-D1-6uU">
+                                <rect key="frame" x="147" y="293" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MA4-oi-onU"/>
+                                    <constraint firstAttribute="height" constant="80" id="dVs-cs-DtB"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X00-We-BON">
+                                <rect key="frame" x="78" y="249" width="218" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="16c-FM-9Cd"/>
+                                    <constraint firstAttribute="width" constant="218" id="wf8-oe-P81"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="28"/>
+                                <state key="normal" title="Delete this entry">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteEntry:" destination="1tt-7k-zaf" eventType="touchUpInside" id="LHp-8J-VkU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92609101530000004" green="0.65839934349999996" blue="0.072317250070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cP3-7c-oCV" firstAttribute="leading" secondItem="7Yu-r0-dj5" secondAttribute="leading" constant="10" id="Cui-1C-EKb"/>
+                            <constraint firstItem="cP3-7c-oCV" firstAttribute="top" secondItem="7Yu-r0-dj5" secondAttribute="top" constant="20" id="P6K-4c-woF"/>
+                            <constraint firstItem="X00-We-BON" firstAttribute="centerX" secondItem="Dq3-za-yFv" secondAttribute="centerX" id="SDD-fz-1Tt"/>
+                            <constraint firstItem="X29-D1-6uU" firstAttribute="centerY" secondItem="Dq3-za-yFv" secondAttribute="centerY" id="Ubj-fy-vWu"/>
+                            <constraint firstItem="X29-D1-6uU" firstAttribute="centerX" secondItem="Dq3-za-yFv" secondAttribute="centerX" id="dgG-nr-Mtz"/>
+                            <constraint firstItem="9PF-GP-N64" firstAttribute="top" secondItem="X29-D1-6uU" secondAttribute="bottom" id="mG2-rT-fl8"/>
+                            <constraint firstItem="X29-D1-6uU" firstAttribute="top" secondItem="X00-We-BON" secondAttribute="bottom" id="oU1-Lo-bzo"/>
+                            <constraint firstItem="9PF-GP-N64" firstAttribute="centerX" secondItem="Dq3-za-yFv" secondAttribute="centerX" id="yKe-2O-ypa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Yu-r0-dj5"/>
+                    </view>
+                    <connections>
+                        <segue destination="AkW-bP-wVK" kind="show" identifier="edit" id="nLi-3e-Vp2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lbM-gU-Yfn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="-603"/>
+        </scene>
+        <!--Setting Number View Controller-->
+        <scene sceneID="eSc-kJ-F2n">
+            <objects>
+                <viewController id="PAM-jQ-AEY" customClass="SettingNumberViewController" customModule="QuickDial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHe-dk-FJt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQg-79-oNU">
+                                <rect key="frame" x="10" y="40" width="22" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="SNm-UO-pQD"/>
+                                    <constraint firstAttribute="width" constant="22" id="SrL-MT-7jg"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="backToSettingName:" destination="PAM-jQ-AEY" eventType="touchUpInside" id="rAC-RC-iE6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOt-y8-UYZ">
+                                <rect key="frame" x="37.5" y="120" width="300" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="VHl-qh-moq"/>
+                                    <constraint firstAttribute="width" constant="300" id="ooc-0D-gBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="JO1-Q2-HGY">
+                                <rect key="frame" x="37" y="157" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="109-bl-br9"/>
+                                    <constraint firstAttribute="height" constant="60" id="3z5-HE-P46"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92609101530000004" green="0.65839934349999996" blue="0.072317250070000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EQg-79-oNU" firstAttribute="leading" secondItem="zL6-9Q-Xch" secondAttribute="leading" constant="10" id="6lD-zN-P5B"/>
+                            <constraint firstItem="EQg-79-oNU" firstAttribute="top" secondItem="zL6-9Q-Xch" secondAttribute="top" constant="20" id="ArT-no-cHe"/>
+                            <constraint firstItem="JO1-Q2-HGY" firstAttribute="centerX" secondItem="kHe-dk-FJt" secondAttribute="centerX" id="HJT-dq-S4A"/>
+                            <constraint firstItem="zOt-y8-UYZ" firstAttribute="top" secondItem="zL6-9Q-Xch" secondAttribute="top" constant="100" id="MPt-7j-7j8"/>
+                            <constraint firstItem="JO1-Q2-HGY" firstAttribute="top" secondItem="zOt-y8-UYZ" secondAttribute="bottom" constant="10" id="dFW-dB-s73"/>
+                            <constraint firstItem="zOt-y8-UYZ" firstAttribute="centerX" secondItem="kHe-dk-FJt" secondAttribute="centerX" id="mev-X4-9uE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zL6-9Q-Xch"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="JO1-Q2-HGY" id="7tJ-6N-QBQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWW-TE-TnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1988" y="116.49175412293854"/>
+        </scene>
+        <!--Setting Name View Controller-->
+        <scene sceneID="Kk1-ve-TJG">
+            <objects>
+                <viewController id="AkW-bP-wVK" customClass="SettingNameViewController" customModule="QuickDial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0hh-sD-VPV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-9B-eBN">
+                                <rect key="frame" x="10" y="40" width="22" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AmK-Lb-mQy"/>
+                                    <constraint firstAttribute="width" constant="22" id="fnR-sq-r9P"/>
+                                </constraints>
+                                <state key="normal" image="Arrow"/>
+                                <connections>
+                                    <action selector="backToMain:" destination="AkW-bP-wVK" eventType="touchUpInside" id="njk-1f-LTv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a contact name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-9q-0FQ">
+                                <rect key="frame" x="37.5" y="120" width="300" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="TzY-RN-5ln"/>
+                                    <constraint firstAttribute="width" constant="300" id="kOE-Ad-iin"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="H7s-Nq-ngO">
+                                <rect key="frame" x="37" y="157" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="g3z-hp-OOP"/>
+                                    <constraint firstAttribute="width" constant="300" id="iFf-Wi-rBV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AkW-bP-wVK" id="OwU-BK-aA7"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92609101533889771" green="0.65839934349060059" blue="0.072317250072956085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H7s-Nq-ngO" firstAttribute="top" secondItem="ekp-9q-0FQ" secondAttribute="bottom" constant="10" id="8XO-qd-Evo"/>
+                            <constraint firstItem="ekp-9q-0FQ" firstAttribute="centerX" secondItem="0hh-sD-VPV" secondAttribute="centerX" id="I4Q-wM-Z5z"/>
+                            <constraint firstItem="ekp-9q-0FQ" firstAttribute="top" secondItem="SAX-1u-YiM" secondAttribute="top" constant="100" id="dMc-fL-qTE"/>
+                            <constraint firstItem="CaA-9B-eBN" firstAttribute="leading" secondItem="SAX-1u-YiM" secondAttribute="leading" constant="10" id="kIn-al-QCz"/>
+                            <constraint firstItem="CaA-9B-eBN" firstAttribute="top" secondItem="SAX-1u-YiM" secondAttribute="top" constant="20" id="uDi-SW-e8Z"/>
+                            <constraint firstItem="H7s-Nq-ngO" firstAttribute="centerX" secondItem="0hh-sD-VPV" secondAttribute="centerX" id="vYB-50-4Dq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SAX-1u-YiM"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="H7s-Nq-ngO" id="f8B-CY-LvC"/>
+                        <segue destination="PAM-jQ-AEY" kind="show" identifier="showSettingNumber" id="OMk-1x-B98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPa-Cj-vSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0NB-ez-VJe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="t9m-uZ-8fb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dUQ-uA-1jD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bcr-Kl-BEK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhF-yP-xTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Arrow" width="22" height="35"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SUj-Lc-KPe"/>
+    </inferredMetricsTieBreakers>
 </document>
